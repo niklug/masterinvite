@@ -1,0 +1,38 @@
+
+/*demo styles*/
+#overview_page table {width: 900px; height: 200px; border-collapse: collapse;  }
+#overview_page table.accessHide { position: absolute; left: -999999px; }
+#overview_page td, #histogram th {text-align: center; border: 1px solid #ddd;  height: 1.5em; padding: 4px;}
+#overview_page td.hover { color: orange; }
+#overview_page td.input { padding: 0; }
+#overview_page td input,  #overview_page td input:focus { border: 1px solid orange; outline: none; padding: 2px; margin: 1px; width: 20px; }
+#overview_page caption {margin: 0 0 .5em; font-size: 1.3em;  text-align: left;   }
+
+
+#overview_page .editableNote { background: #FEFBE2; border: 1px solid #8CC264; padding: 10px; margin: 1.5em 0; font-size: 1.2em; }
+
+/*sample alternate styling for info block on Pie Chart */
+#overview_page .visualize-pie .visualize-info { top: 10px; border: 0; right: auto; left: 10px; padding: 0; background: none; }
+#overview_page .visualize-pie ul.visualize-title { font-weight: bold; border: 0; }
+#overview_page .visualize-pie ul.visualize-key li { float: none; }
+
+
+
+/*option configurator thingy*/
+#overview_page .chartConfiguratorThingy { border: 1px solid #ddd; padding: 10px; overflow: auto; display: none; }
+#overview_page .chartConfiguratorThingy h2 { font-size: 1.4em; color: #666; }
+#overview_page fieldset { margin: 5px 5px 5px 0; width: 45%; float: left; }
+#overview_page legend { font-size: 1.2em; }
+#overview_page .dependencies { padding: 15px; }
+#overview_page label { width: 90px; display: inline-block; }
+
+#overview_page .visualize-bar {
+    left: 50%;
+    margin-left: -450px;
+    position: relative;
+    margin-top: 25px;
+}
+
+#overview_page  .label,  #overview_page .line {
+    background: none;
+}

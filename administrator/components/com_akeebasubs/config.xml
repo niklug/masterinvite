@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<fieldset name="currency" label="COM_AKEEBASUBS_CONFIG_CURRENCY_TITLE">
+		<field type="text"
+			name="currency"
+			default="EUR"
+			label="COM_AKEEBASUBS_CONFIG_CURRENCY_CODE"
+			description="COM_AKEEBASUBS_CONFIG_CURRENCY_CODE_DESC"
+		/>
+		<field type="text"
+			name="currencysymbol"
+			default="€"
+			label="COM_AKEEBASUBS_CONFIG_CURRENCY_SYMBOL"
+			description="COM_AKEEBASUBS_CONFIG_CURRENCY_SYMBOL_DESC"
+		/>
+		<field name="currencypos" type="list" default="before"
+			label="COM_AKEEBASUBS_CONFIG_CURRENCY_POS_LABEL"
+			description="COM_AKEEBASUBS_CONFIG_CURRENCY_POS_DESC">
+			<option value="before">COM_AKEEBASUBS_CONFIG_CURRENCY_POS_BEFORE</option>
+			<option value="after">COM_AKEEBASUBS_CONFIG_CURRENCY_POS_AFTER</option>
+		</field>
+	</fieldset>
+	
+	<fieldset name="backend" label="COM_AKEEBASUBS_CONFIG_BACKEND_TITLE">
+		<field name="gravatar" type="list" default="1"
+			label="COM_AKEEBASUBS_CONFIG_BACKEND_GRAVATAR"
+			description="COM_AKEEBASUBS_CONFIG_BACKEND_GRAVATAR_DESC">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>
+		</field>
+		<field name="imagedir" type="text"
+			default="images"
+			size="60"
+			label="COM_AKEEBASUBS_CONFIG_BACKEND_IMAGEDIR"
+			description="COM_AKEEBASUBS_CONFIG_BACKEND_IMAGEDIR_DESC"
+		/>
+		<field name="show2copromo" type="hidden" default="1" />
+	</fieldset>
+	
+	<fieldset name="frontend" label="COM_AKEEBASUBS_CONFIG_FRONTEND_TITLE">
+		<field name="stepsbar" type="list" default="1"
+			label="COM_AKEEBASUBS_CONFIG_FRONTEND_STEPSBAR"
+			description="COM_AKEEBASUBS_CONFIG_FRONTEND_STEPSBAR_DESC">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>
+		</field>
+		<field name="personalinfo" type="list" default="1"
+			label="COM_AKEEBASUBS_CONFIG_FRONTEND_PERSONALINFO"
+			description="COM_AKEEBASUBS_CONFIG_FRONTEND_PERSONALINFO_DESC">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>
+		</field>
+		<field name="allowlogin" type="list" default="1"
+			label="COM_AKEEBASUBS_CONFIG_FRONTEND_ALLOWLOGIN"
+			description="COM_AKEEBASUBS_CONFIG_FRONTEND_ALLOWLOGIN_DESC">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>				
+		</field>
+		<field name="showrenew" type="list" default="1"
+			label="COM_AKEEBASUBS_CONFIG_FRONTEND_SHOWRENEW_LABEL"
+			description="COM_AKEEBASUBS_CONFIG_FRONTEND_SHOWRENEW_DESC">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>				
+		</field >
+		<field name="noneuvat" type="list" default="0"
+			label="COM_AKEEBASUBS_CONFIG_FRONTEND_NONEUVAT_LABEL"
+			description="COM_AKEEBASUBS_CONFIG_FRONTEND_NONEUVAT_DESC">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>				
+		</field >
+		<field name="useppimages" type="list" default="1"
+			label="COM_AKEEBASUBS_CONFIG_FRONTEND_USEPPIMAGES_LABEL"
+			description="COM_AKEEBASUBS_CONFIG_FRONTEND_USEPPIMAGES_DESC">
+			<option value="0">COM_AKEEBASUBS_CONFIG_FRONTEND_USEPPIMAGES_OPT_DROPDOWN</option>
+			<option value="1">COM_AKEEBASUBS_CONFIG_FRONTEND_USEPPIMAGES_OPT_IMAGEONLY</option>				
+			<option value="2">COM_AKEEBASUBS_CONFIG_FRONTEND_USEPPIMAGES_OPT_IMAGEANDTEXT</option>				
+		</field>
+		<field name="dateformat" type="text"
+			default="Y-m-d H:i"
+			size="30"
+			label="COM_AKEEBASUBS_CONFIG_FRONTEND_DATEFORMAT_LABEL"
+			description="COM_AKEEBASUBS_CONFIG_FRONTEND_DATEFORMAT_DESC"
+		/>
+		<field name="vatrate" type="text"
+			default="0"
+			size="3"
+			label="COM_AKEEBASUBS_CONFIG_FRONTEND_VATRATE_LABEL"
+			description="COM_AKEEBASUBS_CONFIG_FRONTEND_VATRATE_DESC"
+		/>
+		<field name="reqcoupon" type="list" default="0"
+			label="COM_AKEEBASUBS_CONFIG_FRONTEND_REQCOUPON_LABEL"
+			description="COM_AKEEBASUBS_CONFIG_FRONTEND_REQCOUPON_DESC">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>				
+		</field >
+		<field name="confirmfree" type="list" default="0"
+			label="COM_AKEEBASUBS_CONFIG_FRONTEND_CONFIRMFREE_LABEL"
+			description="COM_AKEEBASUBS_CONFIG_FRONTEND_CONFIRMFREE_DESC">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>				
+		</field >
+		<field name="renderasfree" type="list" default="0"
+			label="COM_AKEEBASUBS_CONFIG_FRONTEND_RENDERASFREE_LABEL"
+			description="COM_AKEEBASUBS_CONFIG_FRONTEND_RENDERASFREE_DESC">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>				
+		</field >
+
+		<field name="siteurl" type="hidden" default="" />
+	</fieldset>
+
+	<fieldset name="invoice"
+		label="COM_AKEEBASUBS_CONFIG_INVOICING_TITLE"
+		description="COM_AKEEBASUBS_CONFIG_INVOICING_DESC"
+	>
+		<field name="invoice_number_format" type="text"
+				default="[N:5]"
+				size="30"
+				label="COM_AKEEBASUBS_CONFIG_INVOICE_NUMBER_FORMAT_TITLE"
+				description="COM_AKEEBASUBS_CONFIG_INVOICE_NUMBER_FORMAT_DESC"
+		/>
+		<field name="invoice_autosend" type="list" default="1"
+			label="COM_AKEEBASUBS_CONFIG_INVOICE_AUTOSEND_TITLE"
+			description="COM_AKEEBASUBS_CONFIG_INVOICE_AUTOSEND_DESC">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>				
+		</field>
+		<field name="invoice_override" type="text"
+				default="0"
+				size="6"
+				label="COM_AKEEBASUBS_CONFIG_INVOICE_OVERRIDE_TITLE"
+				description="COM_AKEEBASUBS_CONFIG_INVOICE_OVERRIDE_DESC"
+		/>
+		<field name="invoice_vatnote" type="text"
+				default="VAT liability is transferred to the recipient, pursuant EU Directive nr 2006/112/EC and local tax laws implementing this directive."
+				size="50"
+				label="COM_AKEEBASUBS_CONFIG_INVOICE_VATNOTE_TITLE"
+				description="COM_AKEEBASUBS_CONFIG_INVOICE_VATNOTE_DESC"
+		/>
+		<field name="invoice_certificatefile" type="text"
+				default="certificate.cer"
+				size="30"
+				label="COM_AKEEBASUBS_CONFIG_INVOICE_CERTIFICATEFILE_TITLE"
+				description="COM_AKEEBASUBS_CONFIG_INVOICE_CERTIFICATEFILE_DESC"
+		/>
+		<field name="invoice_secretkeyfile" type="text"
+				default="secret.cer"
+				size="30"
+				label="COM_AKEEBASUBS_CONFIG_INVOICE_SECRETKEYFILE_TITLE"
+				description="COM_AKEEBASUBS_CONFIG_INVOICE_SECRETKEYFILE_DESC"
+		/>
+		<field name="invoice_secretkeypass" type="password"
+				default=""
+				size="20"
+				label="COM_AKEEBASUBS_CONFIG_INVOICE_SECRETKEYPASS_TITLE"
+				description="COM_AKEEBASUBS_CONFIG_INVOICE_SECRETKEYPASS_DESC"
+		/>
+		<field name="invoice_extracert" type="text"
+				default="extra.cer"
+				size="30"
+				label="COM_AKEEBASUBS_CONFIG_INVOICE_EXTRACERT_TITLE"
+				description="COM_AKEEBASUBS_CONFIG_INVOICE_EXTRACERT_DESC"
+		/>
+	</fieldset>
+
+	<fieldset
+		name="updates"
+		label="COM_AKEEBASUBS_CONFIG_UPDATES_LABEL"
+		description="COM_AKEEBASUBS_CONFIG_UPDATES_DESC"
+		>
+		<field name="downloadid" type="text" default="" size="30"
+			label="COM_AKEEBASUBS_CONFIG_UPDATE_DOWNLOADID_LABEL"
+			description ="COM_AKEEBASUBS_CONFIG_UPDATE_DOWNLOADID_DESC" />
+		<field name="minstability" type="list" default="stable" label="COM_AKEEBASUBS_CONFIG_UPDATES_MINSTABILITY_LABEL" description="COM_AKEEBASUBS_CONFIG_UPDATES_MINSTABILITY_DESC">
+			<option value="alpha">COM_AKEEBASUBS_CONFIG_UPDATES_STABILITY_ALPHA</option>
+			<option value="beta">COM_AKEEBASUBS_CONFIG_UPDATES_STABILITY_BETA</option>
+			<option value="rc">COM_AKEEBASUBS_CONFIG_UPDATES_STABILITY_RC</option>
+			<option value="stable">COM_AKEEBASUBS_CONFIG_UPDATES_STABILITY_STABLE</option>
+		</field>
+		<field name="liveupdate" type="hidden" default="" label="" description="" />
+	</fieldset>
+
+	
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+		>
+
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			filter="rules"
+			component="com_akeebasubs"
+			section="component" />
+	</fieldset>	
+</config>

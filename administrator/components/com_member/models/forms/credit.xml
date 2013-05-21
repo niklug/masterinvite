@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="akeebasubs_subscription_id" type="text" size="40" class="inputbox"
+        
+            label="COM_MEMBER_FORM_LBL_CREDIT_AKEEBASUBS_SUBSCRIPTION_ID"
+            description="COM_MEMBER_FORM_DESC_CREDIT_AKEEBASUBS_SUBSCRIPTION_ID" 
+        
+        
+         required="true" 
+        filter="safehtml" /> 
+
+       <field name="user_id" type="text" size="40" class="inputbox"
+        
+            label="COM_MEMBER_FORM_LBL_CREDIT_USER_ID"
+            description="COM_MEMBER_FORM_DESC_CREDIT_USER_ID" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="credit_invoice_number" type="text" size="40" class="inputbox"
+        
+            label="COM_MEMBER_FORM_LBL_CREDIT_CREDIT_INVOICE_NUMBER"
+            description="COM_MEMBER_FORM_DESC_CREDIT_CREDIT_INVOICE_NUMBER" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="publish_up" type="calendar" class="inputbox"
+        
+        
+         default="0000-00-00 00:00:00" 
+        
+            label="COM_MEMBER_FORM_LBL_CREDIT_PUBLISH_UP"
+            description="COM_MEMBER_FORM_DESC_CREDIT_PUBLISH_UP" 
+        filter="safehtml" /> 
+
+       <field name="publish_down" type="calendar" class="inputbox"
+        
+        
+         default="0000-00-00 00:00:00" 
+        
+            label="COM_MEMBER_FORM_LBL_CREDIT_PUBLISH_DOWN"
+            description="COM_MEMBER_FORM_DESC_CREDIT_PUBLISH_DOWN" 
+        filter="safehtml" /> 
+
+       <field name="amount" type="text" size="40" class="inputbox"
+        
+            label="COM_MEMBER_FORM_LBL_CREDIT_AMOUNT"
+            description="COM_MEMBER_FORM_DESC_CREDIT_AMOUNT" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="transactions" type="text" size="40" class="inputbox"
+        
+            label="COM_MEMBER_FORM_LBL_CREDIT_TRANSACTIONS"
+            description="COM_MEMBER_FORM_DESC_CREDIT_TRANSACTIONS" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="credit_paid" type="list"
+                
+            label="COM_MEMBER_FORM_LBL_CREDIT_CREDIT_PAID"
+            description="COM_MEMBER_FORM_DESC_CREDIT_CREDIT_PAID" 
+                
+                
+                
+            filter="raw"
+            multiple="false">
+                <option value="1">Paid</option>
+                <option value="0">Not Paid</option>
+        </field> 
+
+ 
+		<field name="filter_credit_paid" type="list" onchange="this.form.submit();">
+			<option value="">COM_MEMBER_CREDITS_CREDIT_PAID_FILTER</option>
+			<option value="1">Paid</option>
+			<option value="0">Not Paid</option>
+		</field> 
+
+       <field name="created_on" type="calendar" class="inputbox"
+        
+        
+         default="0000-00-00 00:00:00" 
+        
+            label="COM_MEMBER_FORM_LBL_CREDIT_CREATED_ON"
+            description="COM_MEMBER_FORM_DESC_CREDIT_CREATED_ON" 
+        filter="safehtml" /> 
+
+       <field name="payment_data" type="list"
+                
+            label="COM_MEMBER_FORM_LBL_CREDIT_PAYMENT_DATA"
+            description="COM_MEMBER_FORM_DESC_CREDIT_PAYMENT_DATA" 
+                
+                
+                
+            filter="raw">
+                <option value="paypal">Paypal</option>
+                <option value="bank">Bank transfer</option>
+                <option value="save">Saved</option>
+        </field> 
+
+ 
+		<field name="filter_payment_data" type="list" onchange="this.form.submit();">
+			<option value="">COM_MEMBER_CREDITS_PAYMENT_DATA_FILTER</option>
+			<option value="paypal">Paypal</option>
+			<option value="bank">Bank transfer</option>
+			<option value="save">Saved</option>
+		</field>
+
+	</fieldset>
+
+</form>

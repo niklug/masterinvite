@@ -1,0 +1,43 @@
+.icon-48-banners {
+      background-image: url(../images/l_banners.png);
+      padding-left:60px!important;
+}
+
+.icon-48-banner {
+      background-image: url(../images/l_banners.png);
+      padding-left:60px!important;
+}
+
+.preview_button {
+    cursor:pointer;
+    top:-4px;
+    position: relative;
+}
+
+.iconpreview {
+    z-index: 999;
+    display:none;
+    position: absolute;
+    left: 0;
+    top:30%;
+    position: absolute;
+    text-align: center;
+    width: 99%;
+}
+
+.preview_flash {
+    border: 1px solid #cccccc;
+    z-index: 999;
+}
+
+.previewsrc {
+    border: 1px solid #cccccc;
+}
+
+.hideimage{
+    margin-left: -15px;
+    position: absolute;
+    top: 0;
+    cursor:pointer;
+}
+

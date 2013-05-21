@@ -1,0 +1,63 @@
+.preview_button {
+    cursor:pointer;
+    top:-4px;
+    position: relative;
+}
+
+.iconpreview {
+    z-index: 999;
+    display:none;
+    left: 10%;
+    top:300px;
+    position: fixed;
+    text-align: left;
+    width: 99%;
+}
+
+.preview_flash {
+    border: 1px solid #cccccc;
+    z-index: 999;
+}
+
+.previewsrc {
+    border: 1px solid #cccccc;
+}
+
+.hideimage{
+    margin-left: -15px;
+    position: absolute;
+    top: 0;
+    cursor:pointer;
+    margin-top: -12px;
+    z-index: 999999;
+}
+
+.bannercode {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 12px 12px 12px 12px;
+    display: none;
+    left: 50%;
+    margin-left: -350px;
+    padding: 25px;
+    position: absolute;
+    text-align: left;
+    width: 400px;
+    z-index: 9999;
+    top:30%;
+    
+    clear: both;
+    overflow:hidden;
+    
+}
+
+.bannercode  .hideimage {
+    cursor: pointer;
+    margin-left: -25px;
+    position: absolute;
+    right: 5px;
+    top: 15px;
+
+}
+
+
