@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+  <name>affiliate</name>
+	<creationDate></creationDate>
+	<author>Julio Pari</author>
+	<authorEmail>jpari18@gmail.com</authorEmail>
+	<authorUrl>http://www.juliopari.com</authorUrl>
+	<copyright></copyright>
+	<license></license>
+	<version>1.0</version>
+	<description></description>
+  <files>
+		<filename module="mod_affiliate">mod_affiliate.php</filename>
+		<filename>mod_affiliate.xml</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+	</files>
+        <languages>
+		<language tag="en-GB">en-GB.mod_affiliate.ini</language>
+		<language tag="en-GB">en-GB.mod_affiliate.ini</language>
+	</languages>
+	<config>
+		<fields name="params">		
+		  <fieldset name="basic">  	
+                      <field name="size" type="list" default="small" label="Select size of the button" description="">
+                          <option value="small">Small</option>
+                          <option value="big">Big</option>
+                      </field>
+                  </fieldset>  		
+  		<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+			</fieldset>			
+		</fields>
+	</config>
+</extension>
