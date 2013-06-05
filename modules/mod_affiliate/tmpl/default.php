@@ -12,13 +12,13 @@ if($size == 'big') {
 
 // affiliate id
 $aid = JRequest::getVar('aid');
-$session = JFactory::getSession();
+
 if($aid) {
-    $session->set('aid', $aid);
+    setcookie("affiliate_id", $aid, time()+3600*24*20);
 }
 
 if(!$aid) {
-    $aid = $session->get('aid');
+    $aid =  $_COOKIE["affiliate_id"];
 }
 
 
